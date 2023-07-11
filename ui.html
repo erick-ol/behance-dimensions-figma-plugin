@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    :root {
+      --primary-color: #0085FF;
+    }
+
+    .main {
+      margin: 10px;
+    }
+
+    h3 {
+      font-family: 'Inter', sans-serif;
+      font-size: 20px;
+      color: var(--primary-color);
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-family: 'Inter', sans-serif;
+      color: #606068;
+      font-size: 14px;
+    }
+
+    .desc {
+      border-left: 2px solid var(--primary-color);
+      padding-left: 10px;
+    }
+
+    .frames-group {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+    }
+
+    .divider {
+      width: 260px;
+      height: 1px;
+      background-color: #E5E5E5;
+    }
+
+    .frame-type {
+      padding: 0 10px;
+      border-radius: 5px;
+      width: 260px;
+      padding: 10px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .frame-type:hover {
+      background-color: #F5F5F5;
+      cursor: pointer;
+    }
+
+    .frame-name {
+      font-family: 'Inter', sans-serif;
+      color: #262626;
+      font-size: 14px;
+    }
+
+    .frame-value {
+      font-family: 'Inter', sans-serif;
+      color: #848484;
+      font-size: 10px;
+    }
+
+    h4 {
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: #606068;
+      margin-top: 20px;
+    }
+
+    .desc_group {
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+    }
+
+    .frame_item {
+      margin-bottom: 10px;
+    }
+
+    .frame_name {
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: #606068;
+    }
+
+    .frame_desc {
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      color: #606068;
+    }
+  </style>
+
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="main">
+    <h3>Bēhance Dimensions</h3>
+    <p class="desc">Simply click on the desired dimension, and a perfectly sized frame will be created instantly.</p>
+
+    <div class="frames-group">
+      <div class="frame-type" id="portfolio">
+        <p class="frame-name"># Portfolio</p>
+        <p class="frame-value">1400x787</p>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="frame-type" id="cover">
+        <p class="frame-name"># Cover Image</p>
+        <p class="frame-value">808x632</p>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="frame-type" id="banner">
+        <p class="frame-name"># Profile Banner</p>
+        <p class="frame-value">3200x410</p>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="frame-type" id="avatar">
+        <p class="frame-name"># Avatar</p>
+        <p class="frame-value">276x276</p>
+      </div>
+    </div>
+
+    <h4>
+      Description of each frame type
+    </h4>
+
+    <div class="desc_group">
+      <div class="frame_item">
+        <h5 class="frame_name"># Portfolio</h5>
+        <p class="frame_desc">This is your go-to image for showcasing your work on Behance. It's optimized with a width of 1400 pixels, while the height can expand infinitely. With this frame, your portfolio presentation will be sleek, professional, and captivating. It's the perfect way to make a lasting impression and let your work shine on the platform.</p>
+      </div>
+      <div class="frame_item">
+        <h5 class="frame_name"># Cover Image</h5>
+        <p class="frame_desc">The Cover Image is your opportunity to infuse creativity and personalization into your portfolio. By simply clicking on the suggested dimension, a perfectly sized frame will be created, allowing you to unleash your artistic prowess. </p>
+      </div>
+      <div class="frame_item">
+        <h5 class="frame_name"># Profile Banner</h5>
+        <p class="frame_desc">Add a touch of creativity and personalization to your portfolio with a stunning banner. Click on the suggested dimension, and voila! A frame of that size will be created, empowering you to unleash your artistic prowess.</p>
+      </div>
+      <div class="frame_item">
+        <h5 class="frame_name"># Avatar</h5>
+        <p class="frame_desc">Your avatar represents your unique identity and personality. With a simple click on the recommended dimension, a perfectly sized frame will be generated, enabling you to showcase your avatar in all its glory.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('portfolio').onclick = () => {
+      parent.postMessage({
+        pluginMessage: {
+          type: 'create-frame',
+          name: 'Portfolio',
+          width: 1400,
+          height: 787
+        }
+      }, '*')
+    }
+
+    document.getElementById('cover').onclick = () => {
+      parent.postMessage({
+        pluginMessage: {
+          type: 'create-frame',
+          name: 'Cover Image',
+          width: 808,
+          height: 632
+        }
+      }, '*')
+    }
+
+    document.getElementById('banner').onclick = () => {
+      parent.postMessage({
+        pluginMessage: {
+          type: 'create-frame',
+          name: 'Profile Banner',
+          width: 3200,
+          height: 410
+        }
+      }, '*')
+    }
+
+    document.getElementById('avatar').onclick = () => {
+      parent.postMessage({
+        pluginMessage: {
+          type: 'create-frame',
+          name: 'Avatar',
+          width: 276,
+          height: 276
+        }
+      }, '*')
+    }
+  </script>
+
+
+</body>
+
+</html>

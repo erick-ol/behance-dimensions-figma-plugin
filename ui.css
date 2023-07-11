@@ -1,0 +1,29 @@
+h3 {
+  font-family: 'Inter', sans-serif;
+  color: #615EFF;
+}
+
+p {
+  font-family: 'Inter', sans-serif;
+  color: #444;
+  font-size: 14px;
+  border-left: 2px solid #615EFF;
+  padding-left: 10px;
+}
+
+#cancel {
+  background-color: #ddd;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.frame-type {
+  border: 1px solid #615EFF;
+  padding: 10px 10px;
+  border-radius: 5px;
+  width: 100%;
+  display: flex;
+}
