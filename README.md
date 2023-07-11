@@ -1,5 +1,7 @@
 # Behance Dimensions Figma Plugin
 
+![cover art](https://github.com/erick-ol/behance-dimensions-figma-plugin/assets/65933231/21a8c6bd-440d-411d-bb39-57c7aca64c4f)
+
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/your-username/your-repository/blob/main/LICENSE)
 
 Behance Dimensions is a powerful Figma plugin designed to simplify the process of creating Behance portfolios. It allows users to generate frames with the correct pixel sizes for various Behance assets such as portfolio presentations, avatar images, cover images, and profile banners.
