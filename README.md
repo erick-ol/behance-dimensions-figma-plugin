@@ -1,40 +1,43 @@
-Below are the steps to get your plugin running. You can also find instructions at:
+# Behance Dimensions Figma Plugin
 
-  https://www.figma.com/plugin-docs/plugin-quickstart-guide/
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/your-username/your-repository/blob/main/LICENSE)
 
-This plugin template uses Typescript and NPM, two standard tools in creating JavaScript applications.
+Behance Dimensions is a powerful Figma plugin designed to simplify the process of creating Behance portfolios. It allows users to generate frames with the correct pixel sizes for various Behance assets such as portfolio presentations, avatar images, cover images, and profile banners.
 
-First, download Node.js which comes with NPM. This will allow you to install TypeScript and other
-libraries. You can find the download link here:
+## Features
 
-  https://nodejs.org/en/download/
+- Automatically create frames with the right pixel sizes for Behance portfolio assets.
+- Streamline the design workflow and save time by eliminating manual resizing tasks.
+- Ensure pixel-perfect presentation of your work on the Behance platform.
+- Intuitive and user-friendly interface for seamless integration into your Figma design process.
 
-Next, install TypeScript using the command:
+## Installation
 
-  npm install -g typescript
+1. Clone or download this repository.
+2. Open Figma, go to "Plugins" > "Development" > "New Plugin".
+3. Choose "Link existing plugin" and select the `manifest.json` file from the cloned repository.
 
-Finally, in the directory of your plugin, get the latest type definitions for the plugin API by running:
+For more detailed installation instructions, please refer to the [Figma Plugin Documentation](https://www.figma.com/plugin-docs/intro/).
 
-  npm install --save-dev @figma/plugin-typings
+## Usage
 
-If you are familiar with JavaScript, TypeScript will look very familiar. In fact, valid JavaScript code
-is already valid Typescript code.
+1. Select the desired frame or artwork in your Figma design.
+2. Go to "Plugins" > "Behance Dimensions" > "Generate Behance Frame".
+3. Choose the specific Behance asset (portfolio presentation, avatar image, cover image, or profile banner).
+4. Voila! The plugin will automatically create a frame with the correct pixel size for the selected asset.
 
-TypeScript adds type annotations to variables. This allows code editors such as Visual Studio Code
-to provide information about the Figma API while you are writing code, as well as help catch bugs
-you previously didn't notice.
+## License
 
-For more information, visit https://www.typescriptlang.org/
+This project is licensed under the [MIT License](LICENSE).
 
-Using TypeScript requires a compiler to convert TypeScript (code.ts) into JavaScript (code.js)
-for the browser to run.
+## Contributing
 
-We recommend writing TypeScript code using Visual Studio code:
+Contributions are welcome! If you encounter any issues or have suggestions for improvements, please open an issue or submit a pull request.
 
-1. Download Visual Studio Code if you haven't already: https://code.visualstudio.com/.
-2. Open this directory in Visual Studio Code.
-3. Compile TypeScript to JavaScript: Run the "Terminal > Run Build Task..." menu item,
-    then select "npm: watch". You will have to do this again every time
-    you reopen Visual Studio Code.
+## Support
 
-That's it! Visual Studio Code will regenerate the JavaScript file every time you save.
+If you have any questions, feedback, or need assistance, please feel free to contact us at [erickosantos.dev@gmail.com](mailto:erickosantos.dev@gmail.com).
+
+---
+
+We hope that Behance Dimensions simplifies your Behance portfolio creation process and helps you present your work in the best possible way. Happy designing!
