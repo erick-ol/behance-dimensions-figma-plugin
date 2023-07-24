@@ -124,6 +124,13 @@
 
       <div class="divider"></div>
 
+      <div class="frame-type" id="portfolio-hi-qua">
+        <p class="frame-name"># Portfolio High Quality</p>
+        <p class="frame-value">2800x1574</p>
+      </div>
+
+      <div class="divider"></div>
+
       <div class="frame-type" id="cover">
         <p class="frame-name"># Cover Image</p>
         <p class="frame-value">808x632</p>
@@ -154,6 +161,10 @@
         <p class="frame_desc">This is your go-to image for showcasing your work on Behance. It's optimized with a width of 1400 pixels, while the height can expand infinitely. With this frame, your portfolio presentation will be sleek, professional, and captivating. It's the perfect way to make a lasting impression and let your work shine on the platform.</p>
       </div>
       <div class="frame_item">
+        <h5 class="frame_name"># Portfolio High Quality</h5>
+        <p class="frame_desc">This is your go-to image for showcasing your work on Behance. It's optimized with a width of 2800 pixels, while the height can expand infinitely. Use this frame for a higher quality presentation of your portfolio.</p>
+      </div>
+      <div class="frame_item">
         <h5 class="frame_name"># Cover Image</h5>
         <p class="frame_desc">The Cover Image is your opportunity to infuse creativity and personalization into your portfolio. By simply clicking on the suggested dimension, a perfectly sized frame will be created, allowing you to unleash your artistic prowess. </p>
       </div>
@@ -176,6 +187,17 @@
           name: 'Portfolio',
           width: 1400,
           height: 787
+        }
+      }, '*')
+    }
+
+    document.getElementById('portfolio-hi-qua').onclick = () => {
+      parent.postMessage({
+        pluginMessage: {
+          type: 'create-frame',
+          name: 'Portfolio',
+          width: 2800,
+          height: 1574
         }
       }, '*')
     }
